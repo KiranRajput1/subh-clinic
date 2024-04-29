@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap Navbar Example</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    .navbar
+    {
+      font-family: 'Lato', sans-serif;
+      color:grey;
+      font-size: 20px;
+      margin: 0px;
+    }
+    body{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .navbar{
+        position: relative;
+        background-color:  #00c6a9;
+    }
+    .navbar-brand{
+        position: absolute;
+        color:  #00c6a9;
+        background-color: white;
+        font-size: 35px;
+        font-weight: bolder;
+        padding: 35px;
+        margin-left: 25px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    }
+    .navbar-nav{
+        padding-left: 320px;
+    }
+    .nav-link{
+        color: white;
+        margin: 10px;
+        margin-right: 25px;
+    }
+
+    .play-btn {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+    .play-btn {
+                    min-width: 300px;
+                    min-height: 60px;
+                    font-family: 'Nunito', sans-serif;
+                    font-size: 22px;
+                    text-transform: uppercase;
+                    letter-spacing: 1.3px;
+                    font-weight: 700;
+                    color: #313133;
+                    background: #4FD1C5;
+                    background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
+                    border: none;
+                    border-radius: 1000px;
+                   box-shadow: 12px 12px 24px rgba(79,209,197,.64);
+                   transition: all 0.3s ease-in-out 0s;
+                   cursor: pointer;
+                   outline: none;
+                   position: relative;
+                   padding: 10px;
+                  }
+            
+                  .play-btn:hover, .play-btn:focus {
+                   color: #313133;
+                  transform: translateY(-6px);
+                    }
+
+                    .play-btn:hover::before, .play-btn:focus::before {
+                     opacity: 1;
+                    }
+                    .play-btn::after {
+                     content: '';
+                     width: 30px; height: 30px;
+                     border-radius: 100%;
+                     border: 6px solid #00FFCB;
+                     position: absolute;
+                     z-index: -1;
+                     top: 50%;
+                     left: 50%;
+                    transform: translate(-50%, -50%);
+                    animation: ring 1.5s infinite;
+                    
+                  }
+                  .play-btn:hover::after, .play-btn:focus::after {
+                   animation: none;
+                   display: none;
+                  }
+
+              @keyframes ring {
+              0% {
+                   width: 30px;
+                   height: 30px;
+                   opacity: 1;
+                  }
+                 100% {
+                    width: 300px;
+                    height: 300px;
+                    opacity: 0;
+                    }
+                 }
+
+                  .section{
+                    box-shadow: #00FFCB;
+                  }
+               .form{
+                box-shadow: #00c6a9;
+               }
+    </style>
+    
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-cyan" style="background-color: #00c6a9;" float="right" font size="20">
+  <a class="navbar-brand" href="#" style="font-size: 30px"> 
+    <span  href="http://127.0.0.1:5500/index.html#" style="color: white"></span>Shubh Clinic</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <!-- <span class="navbar-toggler-icon"></span> -->
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="http://127.0.0.1:5500/index.html#">
+          Home <span class="sr-only">(current)</span></a>&ensp;&ensp;
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="http://127.0.0.1:5500/about.html">About</a>&ensp;&ensp;
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="http://127.0.0.1:5500/treatment.html">Treatments</a>&ensp;&ensp;
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="http://127.0.0.1:5500/our%20dr.html">Doctor</a>&ensp;&ensp;
+      </li>
+        <li class="nav-item">
+          <a class="nav-link" href="http://127.0.0.1:5500/contact.html#">Contact</a>&ensp;&ensp;
+        </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://127.0.0.1:5500/login.html">Login</a>&ensp;&ensp;
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://127.0.0.1:5500/sign%20up.html">Sign</a>&ensp;&ensp;
+          </li>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div id="customCarousel1" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+    <div class="container ">
+      <div class="row">
+        <div class="col-md-6">
+            
+      <div class="detail-box">
+        <div class="play_btn" style="margin-top: 80px;" style="animation-duration: 500ms;"  >
+        
+          <i class="fa fa-play-circle" style="font-size:48px;color:cyan "></i>
+    
+        </div>
+       
+        <h1 style="margin-top: 50px;">Mico <br>
+          <span style="color: #00c6a9;">Hospital</span></h1>
+        <p>when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to</p>
+        <button type="button" class="btn btn-dark">Contact us</button>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="img-box"><img src="./image1.jpg" alt=""></div>
+ 
+      <div>
+        <center>
+        
+        <section class="book_section layout_padding">
+          <div class="container">
+            <div class="row vertical-center-row">
+              <div class="col">
+                <form><h4>BOOK 
+                  <span style="color: #00c6a9;"> APPOINTMENT</span></h4>
+                  <div class="form-row ">
+                    <div class="form-group col-lg-4">
+                      <label for="inputPatientName" >Patient Name </label>
+                      <input type="text" class="form-control" id="inputPatientName" placeholder=""></div>
+                      <div class="form-group col-lg-4"><label for="inputDoctorName">Doctor's Name</label>
+                        <select name="" class="form-control wide" id="inputDoctorName"><option value="Normal distribution ">Normal distribution </option>
+                          <option value="Normal distribution ">Normal distribution </option>
+                          <option value="Normal distribution ">Normal distribution </option>
+                        </select>
+                      </div>
+                      <div class="form-group col-lg-4">
+                        <label for="inputDepartmentName">Department's Name</label>
+                        <select name="" class="form-control wide" id="inputDepartmentName">
+                          <option value="Normal distribution ">Normal distribution </option>
+                          <option value="Normal distribution ">Normal distribution </option>
+                          <option value="Normal distribution ">Normal distribution </option></select>
+                        </div>
+                      </div>
+                      <div class="form-row ">
+                        <div class="form-group col-lg-4">
+                          <label for="inputPhone">Phone Number</label>
+                          <input type="number" class="form-control" id="inputPhone" placeholder="XXXXXXXXXX">
+                        </div>
+                        <div class="form-group col-lg-4">
+                          <label for="inputSymptoms">Symptoms</label>
+                          <input type="text" class="form-control" id="inputSymptoms" placeholder="">
+                        </div>
+                        <div class="form-group col-lg-4">
+                          <label for="inputDate">Choose Date </label>
+                          <div class="input-group date" id="inputDate" data-date-format="mm-dd-yyyy">
+                            <input type="text" class="form-control"><span class="input-group-addon date_icon">
+                              <i class="fa fa-calendar" aria-hidden="true"></i>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="btn-box">
+                        <button type="button" class="btn btn-dark">Submit Now</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+
+     <p style="background-color: white;">© <span id="displayYear" style="color: black;"></span> 
+      All Rights Reserved By
+      <a href="https://html.design/">Free Html Templates</a></p>
+    </div>
+  </center>
+</body>
+</html>
+
